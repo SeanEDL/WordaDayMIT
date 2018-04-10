@@ -1,0 +1,163 @@
+<!--
+Beginner - words, definition
+Intermediate - words2, definition2
+Advanced - words3, definition3
+-->
+
+<resources>
+    <string name="app_name">WordaDay</string>
+    <string-array name="levels">
+        <item>Beginner</item>
+        <item>Intermediate</item>
+        <item>Advanced</item>
+    </string-array>
+
+    <string-array name="words">
+        <item>archer</item>
+        <item>atom</item>
+        <item>attack</item>
+        <item>bad</item>
+        <item>bag</item>
+    </string-array>
+    <string-array name="definition">
+        <item>a person who shoots with a bow and arrows, especially at a target as a sport.</item>
+        <item>1. the smallest particle of a chemical element that can exist.\n2. a level of amateur sport, typically involving children aged between nine and eleven.</item>
+        <item>1. take aggressive military action against (a place or enemy forces) with weapons or armed force.\n2. criticize or oppose fiercely and publicly.</item>
+        <item>1. of poor quality or a low standard.\n2. not such as to be hoped for or desired; unpleasant or unwelcome.</item>
+        <item>a flexible container with an opening at the top, used for carrying things.</item>
+    </string-array>
+    <string-array name="example">
+        <item>she was a very good archer</item>
+        <item>1. the power of the atom\n2. eight atom hockey teams</item>
+        <item>1. in February the Germans attacked Verdun\n2. he attacked the government's defence policy</item>
+        <item>1. a bad diet\n2. bad news</item>
+        <item>he arrived at the children's ward carrying a bag full of toys for the young patients</item>
+    </string-array>
+
+    <string-array name="words2">
+        <item>cry</item>
+        <item>stop</item>
+        <item>bright</item>
+        <item>sail</item>
+        <item>fire</item>
+    </string-array>
+    <string-array name="definition2">
+        <item>1. shed tears in distress, pain, or sorrow.\n2. a loud inarticulate shout or scream expressing a powerful feeling or emotion.</item>
+        <item>1. (of an event, action, or process) come to an end; cease to happen\n2. a cessation of movement or operation.</item>
+        <item>1. giving out or reflecting much light; shining.\n2. intelligent and quick-witted.</item>
+        <item>a piece of material extended on a mast to catch the wind and propel a boat or ship or other vessel.</item>
+        <item>a process in which substances combine chemically with oxygen from the air and typically give out bright light, heat, and smoke; combustion or burning.</item>
+    </string-array>
+    <string-array name="example2">
+        <item>1. don't cry, t'll be all right\n2. a cry of despair</item>
+        <item>1. his laughter stopped as quickly as it had begun\n2. all business came to a stop</item>
+        <item>1. the sun was dazzlingly bright\n2. a full moon shining bright</item>
+        <item>all the sails were unfurled</item>
+        <item>his house was destroyed by fire</item>
+    </string-array>
+
+    <string-array name="words3">
+        <item>charge</item>
+        <item>ground</item>
+        <item>force</item>
+        <item>reading</item>
+        <item>long</item>
+    </string-array>
+    <string-array name="definition3">
+        <item>1. demand (an amount) as a price for a service rendered or goods supplied.\n2. formally accuse (someone) of something, especially an offence under law.</item>
+        <item>1. the solid surface of the earth.\n2. prohibit or prevent (a pilot or an aircraft) from flying.</item>
+        <item>1. strength or energy as an attribute of physical action or movement.\n2. coercion or compulsion, especially with the use or threat of violence.</item>
+        <item>1. the action or skill of reading.\n2. an occasion at which pieces of literature are read to an audience.</item>
+        <item>1. measuring a great distance from end to end.\n2. lasting or taking a great amount of time.</item>
+    </string-array>
+    <string-array name="example3">
+        <item>1. wedding planners may charge an hourly fee of up to £150\n2. they were charged with assault</item>
+        <item>1. he lay on the ground\n2. a bitter wind blew from the north-east and the bombers were grounded</item>
+        <item>1. he was thrown backwards by the force of the explosion\n2. they ruled by law and not by force</item>
+        <item>1. the reading of a will\n2. the reading of a will</item>
+        <item>1. a long corridor\n2. a long and distinguished career</item>
+    </string-array>
+
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">Notifications</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string-array name="intervals">
+        <item>Hourly</item>
+        <item>Half Daily</item>
+        <item>Daily</item>
+    </string-array>
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+
+    <string name="about">WordaDay was developed by the combined effort of two University students from MIT located in Auckland, New Zealand. As part of our project we were tasked with researching, developing and coding a mobile app of our choosing and so WordaDay was born.\n\nWe were very passionate about our project and put a lot of time and effort into WordaDay. We are enthused with learning new English words each and every day and hope that this app we developed will help you out as well. We hope you enjoy our app and we will continue to support it!</string>
+
+    <string name="copyright">Application created by Sean Cardiff and William Young from Manukau Institute of Technology. \n\nImages remain the property of https://www.pexels.com/</string>
+</resources>
