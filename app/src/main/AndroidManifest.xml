@@ -29,11 +29,6 @@
             </intent-filter>
         </activity>
         <!-- <activity android:name=".Startup"></activity> -->
-        <activity
-            android:name=".SettingsActivity"
-            android:label="@string/title_activity_settings" />
-        <activity android:name=".copyright" />
-        <activity android:name=".about" />
         <activity android:name=".Set"></activity>
     </application>
 

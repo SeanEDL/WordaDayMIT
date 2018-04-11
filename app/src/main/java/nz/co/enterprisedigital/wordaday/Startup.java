@@ -1,9 +1,12 @@
 package nz.co.enterprisedigital.wordaday;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.os.Build;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -95,8 +98,23 @@ public class Startup extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch(item.getItemId()){
             case R.id.info2:
-                Intent myIntent = new Intent(Startup.this,about.class);
-                startActivity(myIntent);
+                AlertDialog.Builder builder;
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                    builder = new AlertDialog.Builder(this, android.R.style.Theme_Material_Dialog_Alert);
+                } else {
+                    builder = new AlertDialog.Builder(this);
+                }
+                builder.setTitle("Info")
+                        .setMessage(getResources().getString(R.string.info))
+                        .setPositiveButton("Close", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which) {
+                                // continue with delete
+                            }
+                        })
+                        //.setIcon(android.R.drawable.ic_dialog_alert)
+                        .show();
+                // myIntent = new Intent(Startup.this,about.class);
+                //startActivity(myIntent);
                 return true;
         }
         return super.onOptionsItemSelected(item);

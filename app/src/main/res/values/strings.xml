@@ -157,6 +157,8 @@ Advanced - words3, definition3
 
     <string name="pref_title_vibrate">Vibrate</string>
 
+    <string name="info">Select your level below, and click "Begin your journey" to start. If you wish to receive daily word notifications, click the checkbox.\n\nThanks! Sean and William</string>
+
     <string name="about">WordaDay was developed by the combined effort of two University students from MIT located in Auckland, New Zealand. As part of our project we were tasked with researching, developing and coding a mobile app of our choosing and so WordaDay was born.\n\nWe were very passionate about our project and put a lot of time and effort into WordaDay. We are enthused with learning new English words each and every day and hope that this app we developed will help you out as well. We hope you enjoy our app and we will continue to support it!</string>
 
     <string name="copyright">Application created by Sean Cardiff and William Young from Manukau Institute of Technology. \n\nImages remain the property of https://www.pexels.com/</string>
