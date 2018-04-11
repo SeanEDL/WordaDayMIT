@@ -135,7 +135,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch(item.getItemId()){
             case R.id.settings:
-                Intent settings = new Intent(MainActivity.this, SettingsActivity.class);
+                Intent settings = new Intent(MainActivity.this, Set.class);
                 startActivity(settings);
                 return true;
 

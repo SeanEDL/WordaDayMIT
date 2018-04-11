@@ -109,21 +109,25 @@ public class NotificationService extends Service {
                 }
                 wrd = listOfWords[loc];
 
-                android.support.v4.app.NotificationCompat.Builder mBuilder = new android.support.v4.app.NotificationCompat.Builder(getApplicationContext());
+                //Display notification, only if client has selected it
+                String notificationPref = preferences.getString("newNotif", "");
+                if (notificationPref.equals("true")) {
+                    android.support.v4.app.NotificationCompat.Builder mBuilder = new android.support.v4.app.NotificationCompat.Builder(getApplicationContext());
 
-                PendingIntent pendingIntent = PendingIntent.getActivity(getApplicationContext(), 0, intent, PendingIntent.FLAG_CANCEL_CURRENT);
+                    PendingIntent pendingIntent = PendingIntent.getActivity(getApplicationContext(), 0, intent, PendingIntent.FLAG_CANCEL_CURRENT);
 
-                mBuilder.setContentIntent(pendingIntent);
+                    mBuilder.setContentIntent(pendingIntent);
 
-                mBuilder.setSmallIcon(R.drawable.ic_notifications_black_24dp);
-                mBuilder.setContentTitle(wrd);
-                mBuilder.setContentText("Click to see your word of the day!");
+                    mBuilder.setSmallIcon(R.drawable.ic_notifications_black_24dp);
+                    mBuilder.setContentTitle(wrd);
+                    mBuilder.setContentText("Click to see your word of the day!");
 
-                NotificationManager mNotificationManager =
+                    NotificationManager mNotificationManager =
 
-                        (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+                            (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
 
-                mNotificationManager.notify(001, mBuilder.build());
+                    mNotificationManager.notify(001, mBuilder.build());
+                }
 
                 SharedPreferences.Editor editor = preferences.edit();
                 editor.putString("word", wrd);

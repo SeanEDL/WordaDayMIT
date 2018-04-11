@@ -58,12 +58,25 @@ public class SecondActivity extends AppCompatActivity {
         }
 
         //Sets up text views with relevant texts using word string location from above
-        TextView exm = findViewById(R.id.exampleTextView);
-        exm.setText(exmpStrings[index]);
-        TextView def = findViewById(R.id.definitionTextView);
-        def.setText(defStrings[index]);
-        TextView wrd = findViewById(R.id.wordTextView);
-        wrd.setText(definition);
+        try{
+            TextView exm = findViewById(R.id.exampleTextView);
+            exm.setText(exmpStrings[index]);
+            TextView def = findViewById(R.id.definitionTextView);
+            def.setText(defStrings[index]);
+            TextView wrd = findViewById(R.id.wordTextView);
+            wrd.setText(definition);
+        }
+        catch(Exception e){
+            if (index == -1){
+                index = 1;
+            }
+            TextView exm = findViewById(R.id.exampleTextView);
+            exm.setText(exmpStrings[index]);
+            TextView def = findViewById(R.id.definitionTextView);
+            def.setText(defStrings[index]);
+            TextView wrd = findViewById(R.id.wordTextView);
+            wrd.setText(definition);
+        }
 
         //Initialise image
         ImageView image;

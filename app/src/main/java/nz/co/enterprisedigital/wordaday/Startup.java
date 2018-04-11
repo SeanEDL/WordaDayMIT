@@ -71,6 +71,11 @@ public class Startup extends AppCompatActivity {
                     editor.apply();
                     selection();
                 }
+                else{
+                    editor.putString("newNotif","false");
+                    editor.apply();
+                    selection();
+                }
 
                 //Sends through level and starts MainActivity when user selects level and clicks to start
                 final String level = spinner.getSelectedItem().toString();
